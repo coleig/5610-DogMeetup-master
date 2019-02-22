@@ -1,0 +1,71 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add node-sass
+
+PATH: 
+  C:\cygwin64\usr\local\bin;C:\cygwin64\bin;C:\cygwin64\bin;C:\gcc\libexec\gcc\x86_64-w64-mingw32\4.9.2;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\doxygen\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\gcc\bin;C:\gcc\libexec\gcc\x86_64-w64-mingw32\7.2.0;C:\Program Files (x86)\PharosSystems\Core;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Users\mdoro\AppData\Local\Programs\Python\Python36;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Users\mdoro\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-9.0.4\bin;C:\Users\mdoro\AppData\Local\Android\Sdk\platform-tools;C:\Users\mdoro\AppData\Local\Android\Sdk\tools;C:\Users\mdoro\AppData\Local\Android\Sdk\emulator;C:\Users\mdoro\AppData\Local\GitHubDesktop\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\mdoro\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\mdoro\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\mdoro\OneDrive\Documents\GitHub\5610-DogMeetup-master\node_modules\bcrypt\lib\binding\bcrypt_lib.node'
+
+npm manifest: 
+  {
+    "name": "5610-project2",
+    "version": "1.0.0",
+    "description": "A website for dog meetups",
+    "main": "index.js",
+    "scripts": {
+      "client-install": "npm install --prefix client",
+      "start": "node index.js",
+      "server": "nodemon index.js",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/michelledlee/5610-Project2.git"
+    },
+    "keywords": [
+      "dogs",
+      "meetup"
+    ],
+    "author": "Michelle Lee and Bri (Cole)",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/michelledlee/5610-Project2/issues"
+    },
+    "homepage": "https://github.com/michelledlee/5610-Project2#readme",
+    "dependencies": {
+      "bcrypt": "^3.0.4",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.18.3",
+      "concurrently": "^4.1.0",
+      "cookie-parser": "^1.4.4",
+      "create-react-app": "^2.1.5",
+      "express": "^4.16.4",
+      "express-session": "^1.15.6",
+      "is-empty": "^1.2.0",
+      "jsonwebtoken": "^8.4.0",
+      "mongoose": "^5.4.11",
+      "passport": "^0.4.0",
+      "passport-jwt": "^4.0.0",
+      "validator": "^10.11.0"
+    },
+    "devDependencies": {
+      "nodemon": "^1.18.10"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
