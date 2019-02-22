@@ -9,6 +9,7 @@ class AddDog extends Component {
   constructor() {
     super();
     this.state = {
+      email: "",
       name: "",
       age: "",
       breed: "",
