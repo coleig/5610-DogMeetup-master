@@ -40,6 +40,7 @@ class AddDog extends Component {
     e.preventDefault();
 
     const newDog = {
+      email: this.state.email,
       name: this.state.name,
       age: this.state.age,
       breed: this.state.breed,
@@ -56,8 +57,24 @@ class AddDog extends Component {
         <div className="row">
           <div className="col s8 offset-s2">
             <form noValidate onSubmit={this.onSubmit}>
+            <div className="input-field col s12">
+                <label htmlFor="email">Email</label>
+                <input
+                  onChange={this.onChange}
+                  value={this.state.email}
+                  error={errors.email}
+                  id="email"
+                  name="email"
+                  type="text"
+                  className={classnames("", {
+                    invalid: errors.email
+                  })}
+                />
+
+                <span className="red-text">{errors.email}</span>
+              </div>
               <div className="input-field col s12">
-                               <label htmlFor="name">Name</label>
+                <label htmlFor="name">Name</label>
                 <input
                   onChange={this.onChange}
                   value={this.state.name}
@@ -73,7 +90,7 @@ class AddDog extends Component {
                 <span className="red-text">{errors.name}</span>
               </div>
               <div className="input-field col s12">
-                              <label htmlFor="age">Age</label>
+                <label htmlFor="age">Age</label>
                 <input
                   onChange={this.onChange}
                   value={this.state.age}
