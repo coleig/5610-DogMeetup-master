@@ -23,9 +23,9 @@ return (
                 <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
               </p>
             
-            <Link to="/mydogs" className="btn btn-primary btn-xl rounded-pill mt-5">My Dogs</Link>
-            <Link to="/myevents" className="btn btn-primary btn-xl rounded-pill mt-5">My Events</Link>
-            <Link to="/browseevents" className="btn btn-primary btn-xl rounded-pill mt-5">Browse Events</Link>
+            <Link to="/mydogs" className="btn btn-lg btn-primary btn-block text-uppercase">My Dogs</Link>
+            <Link to="/myevents" className="btn btn-lg btn-primary btn-block text-uppercase">My Events</Link>
+            <Link to="/browseevents" className="btn btn-lg btn-primary btn-block text-uppercase">Browse Events</Link>
 
             <button
               style={{

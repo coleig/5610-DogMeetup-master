@@ -22,7 +22,8 @@ export const registerUser = (userData, history) => dispatch => {
 // Register Dog
 export const registerDog = (dogData, history) => dispatch => {
   axios
-    .post("/api/users/registerdog", dogData)
+    .post("/api/dogs/register", dogData)
+    .then(res => history.push("/login")) // re-direct to mydogs
     .catch(err =>
       dispatch({
         type: GET_ERRORS,

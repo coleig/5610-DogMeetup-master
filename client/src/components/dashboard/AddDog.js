@@ -39,6 +39,8 @@ class AddDog extends Component {
   onSubmit = e => {
     e.preventDefault();
 
+    console.log("Submitted!");
+
     const newDog = {
       email: this.state.email,
       name: this.state.name,
@@ -47,7 +49,7 @@ class AddDog extends Component {
       gender: this.state.gender
     };
 
-    this.props.registerDog(newDog, this.props.history);  // push dog directly to array here?
+    this.props.registerDog(newDog, this.props.history);  
   };
 
   render() {
@@ -55,6 +57,8 @@ class AddDog extends Component {
     return (
       <div className="container">
         <div className="row">
+        <div className="spacer">
+        </div>
           <div className="col s8 offset-s2">
             <form noValidate onSubmit={this.onSubmit}>
             <div className="input-field col s12">
@@ -96,7 +100,8 @@ class AddDog extends Component {
                   value={this.state.age}
                   error={errors.age}
                   id="age"
-                  type="age"
+                  name="age"
+                  type="text"
                   className={classnames("", {
                     invalid: errors.age
                   })}
@@ -110,7 +115,8 @@ class AddDog extends Component {
                   value={this.state.breed}
                   error={errors.breed}
                   id="breed"
-                  type="breed"
+                  name="breed"
+                  type="text"
                   className={classnames("", {
                     invalid: errors.breed
                   })}
@@ -125,7 +131,8 @@ class AddDog extends Component {
                   value={this.state.gender}
                   error={errors.gender}
                   id="gender"
-                  type="gender"
+                  name="gender"
+                  type="text"
                   className={classnames("", {
                     invalid: errors.gender
                   })}
